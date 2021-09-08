@@ -10,6 +10,7 @@
   overflow: hidden;
   overflow-y: auto;
   overflow: hidden; /* Hide scrollbars */
+  touch-action: none;
 }
 .infinite-scroll {
   position: absolute;
