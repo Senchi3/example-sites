@@ -1,0 +1,35 @@
+/* Infinite scroll */
+
+.infinite-scroll-container {
+  position: relative;
+  /* background: red; */
+  max-height: 30vh;
+  float: left;
+  width: 40vw;
+  height: 50vh;
+  overflow: hidden;
+  overflow-y: auto;
+  overflow: hidden; /* Hide scrollbars */
+}
+.infinite-scroll {
+  position: absolute;
+  margin: 20px;
+  top: 0;
+  animation: scroll 10s linear 1s infinite;
+}
+.scrollable-card {
+  min-width: 40vw;
+  min-height: 40px;
+  display: block;
+  /* color: white; */
+  margin: 5px;
+  /* background: blue; */
+}
+@keyframes scroll {
+  95% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
