@@ -4,12 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>AUDIOFEST 2031 - Participantes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/evento.css">
-    <script src="scripts/navbar.js"></script>
-    <script src="scripts/countdown.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/evento.css">
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/countdown.js"></script>
+    <script type="module" src="../scripts/carousel.js"></script>
+    <link rel="stylesheet" href="../extensions/bulma-carousel.min.css">
+    <script src="../extensions/bulma-carousel.min.js"></script>
     <script src="https://kit.fontawesome.com/47aa67d8f2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,7 +20,7 @@
     <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://senchi3.github.io/example-sites/evento.html">
-                <img src="images/eventlogoi.png" width="112" height="28">
+                <img src="../images/evento/eventlogoi.png" width="112" height="28">
             </a>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
@@ -44,7 +47,8 @@
                     </a>
 
                     <div class="navbar-dropdown">
-                        <a class="navbar-item" href="https://senchi3.github.io/example-sites/evento/sobre-nosotros.html">
+                        <a class="navbar-item"
+                            href="https://senchi3.github.io/example-sites/evento/sobre-nosotros.html">
                             Sobre nosotros
                         </a>
                         <a class="navbar-item" href="https://senchi3.github.io/example-sites/evento/empleos.html">
@@ -68,15 +72,80 @@
             </div>
         </div>
     </nav>
+    <section class="section">
+        <div class="container">
+            <!-- Start Carousel -->
+            <div id="carousel-demo" class="carousel">
+                <div class="item-1">
+                    <figure class="image is-square">
+                        <img src="../images/evento/pexels-oluremi-adebayo-2908175.jpg">
+                    </figure>
+                    <h5 class="subtitle is-5">Oluremi Adebayo</h5>
+                </div>
+                <div class="item-2">
+                    <figure class="image is-square">
+                        <img src="../images/evento/pexels-brett-sayles-1309240.jpg">
+                    </figure>
+                    <h5 class="subtitle is-5">Brett Sayles</h5>
+                </div>
+                <div class="item-3">
+                    <figure class="image is-square">
+                        <img src="../images/evento/pexels-wendy-wei-1699161.jpg">
+                    </figure>
+                    <h5 class="subtitle is-5">Wendy Wei</h5>
+                </div>
+            </div>
+            <!-- End Carousel -->
+        </div>
+    </section>
 
-    <section class="hero is-large is-info" style="background-image: url(images/rave.jpg);">
+    <section class="hero is-large is-info" style="background-image: url(../images/evento/rave.jpg);">
         <div class="hero-body">
             <p class="title">
-                Ponte en onda.
+                Artistas invitados
             </p>
-            <p class="subtitle">
-                <b>AUDIOFEST</b> trae la música que está de moda.
-            </p>
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <figure class="image is-square">
+                        <img src="../images/evento/pexels-oluremi-adebayo-2908175.jpg">
+                    </figure>
+                    <h5 class="subtitle is-5">Oluremi Adebayo</h5>
+                </div>
+                <div class="column has-text-centered">
+                    <figure class="image is-square">
+                        <img src="../images/evento/pexels-brett-sayles-1309240.jpg">
+                    </figure>
+                    <h5 class="subtitle is-5">Brett Sayles</h5>
+                </div>
+                <div class="column has-text-centered">
+                    <figure class="image is-square">
+                        <img src="../images/evento/pexels-wendy-wei-1699161.jpg">
+                    </figure>
+                    <h5 class="subtitle is-5">Wendy Wei</h5>
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <figure class="image is-square">
+                        <img src="../images/evento/pexels-keegan-checks-2802811.jpg">
+                    </figure>
+                    <h5 class="subtitle is-5">Keegan Checks</h5>
+                </div>
+                <div class="column has-text-centered">
+                    <figure class="image is-square">
+                        <img src="../images/evento/pexels-davide-de-giovanni-1649693.jpg">
+                    </figure>
+                    <h5 class="subtitle is-5">Davide De Giovanni</h5>
+                </div>
+                <div class="column has-text-centered">
+                    <figure class="image is-square">
+                        <img src="../images/evento/pexels-radu-florin-2536584.jpg">
+                    </figure>
+                    <h5 class="subtitle is-5">Radu Florin</h5>
+                </div>
+            </div>
+            <h4 class="subtitle is-4">Y muchos más...</h5>
+
         </div>
     </section>
     <section class="hero is-medium is-danger is-link">
@@ -180,6 +249,8 @@
                     Alvarado</a>. El código fuente está licenciado bajo <a
                     href="http://opensource.org/licenses/mit-license.php">la licencia MIT</a>.
             </p>
+            <p>Imágenes de Pexels, por Oluremi Adebayo, Brett Sayles, Wendy Wei, Keegan Checks, Davide De
+                Giovanni y Radu Florin.</p>
             <p>2021</p>
         </div>
     </footer>
