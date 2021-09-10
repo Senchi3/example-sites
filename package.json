@@ -1,0 +1,23 @@
+{
+  "name": "example-sites",
+  "version": "1.0.0",
+  "description": "Example websites to show potential clients.",
+  "main": "index.html",
+  "dependencies": {
+    "bulma-pageloader": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Senchi3/example-sites.git"
+  },
+  "author": "Senchi3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Senchi3/example-sites/issues"
+  },
+  "homepage": "https://github.com/Senchi3/example-sites#readme"
+}
