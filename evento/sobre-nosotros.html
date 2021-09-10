@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/evento.css">
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/countdown.js"></script>
+    <script src="https://kit.fontawesome.com/47aa67d8f2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://senchi3.github.io/example-sites/evento.html">
+                <img src="images/eventlogoi.png" width="112" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="https://senchi3.github.io/example-sites/evento.html">
+                    Inicio
+                </a>
+
+                <a class="navbar-item" href="https://senchi3.github.io/example-sites/evento/participantes.html">
+                    Participantes
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Más
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="https://senchi3.github.io/example-sites/evento/sobre-nosotros.html">
+                            Sobre nosotros
+                        </a>
+                        <a class="navbar-item" href="https://senchi3.github.io/example-sites/evento/empleos.html">
+                            Empleos
+                        </a>
+                        <a class="navbar-item" href="https://senchi3.github.io/example-sites/evento/contacto.html">
+                            Contacto
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="https://senchi3.github.io/example-sites/empresa.html">
+                            Sitio de empresa
+                        </a>
+                        <a class="navbar-item" href="https://senchi3.github.io/example-sites/cv.html">
+                            Sitio de currículum
+                        </a>
+                        <a class="navbar-item" href="https://senchi3.github.io/example-sites/evento/personal.html">
+                            Sitio personal
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-large is-info" style="background-image: url(images/rave.jpg);">
+        <div class="hero-body">
+            <p class="title">
+                Ponte en onda.
+            </p>
+            <p class="subtitle">
+                <b>AUDIOFEST</b> trae la música que está de moda.
+            </p>
+        </div>
+    </section>
+    <section class="hero is-medium is-danger is-link">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column">
+                    <p class="title">
+                        Todos están invitados.
+                    </p>
+                    <p class="subtitle">
+                        <b>AUDIOFEST 2031</b> traerá a más artistas que nunca.
+                    </p>
+                </div>
+                <div class="column">
+                    <div class="infinite-scroll-container">
+                        <div class="infinite-scroll">
+                            <span class="scrollable-card is-size-3">Juanito Perez</span>
+                            <span class="scrollable-card is-size-3">Pedrito Juanez</span>
+                            <span class="scrollable-card is-size-3">Máicol Yacson</span>
+                            <span class="scrollable-card is-size-3">Nombre de Banda</span>
+                            <span class="scrollable-card is-size-3">Kantan Techévere</span>
+                            <span class="scrollable-card is-size-3">Otro Nombre</span>
+                            <span class="scrollable-card is-size-3">Un Nombre Más</span>
+                            <span class="scrollable-card is-size-3">123456789</span>
+                            <span class="scrollable-card is-size-3">Juanito Perez</span>
+                            <span class="scrollable-card is-size-3">Pedrito Juanez</span>
+                            <span class="scrollable-card is-size-3">Máicol Yacson</span>
+                            <span class="scrollable-card is-size-3">Nombre de Banda</span>
+                            <span class="scrollable-card is-size-3">Kantan Techévere</span>
+                            <span class="scrollable-card is-size-3">Otro Nombre</span>
+                            <span class="scrollable-card is-size-3">Un Nombre Más</span>
+                            <span class="scrollable-card is-size-3">123456789</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <p class="title">
+                Marca tu calendario.
+            </p>
+            <p id="countdown"></p>
+
+            <div class="tile is-ancestor">
+                <div class="tile is-parent is-2">
+                    <article class="tile is-child notification is-danger">
+                        <p class="title" id="years">
+                        <p class="subtitle">años</p>
+                    </article>
+                </div>
+                <div class="tile is-parent is-2">
+                    <article class="tile is-child notification is-warning">
+                        <p class="title" id="months">
+                        <p class="subtitle">meses</p>
+                    </article>
+                </div>
+                <div class="tile is-parent is-2">
+                    <article class="tile is-child notification is-warning">
+                        <p class="title" id="days">
+                        <p class="subtitle">días</p>
+                    </article>
+                </div>
+                <div class="tile is-parent is-2">
+                    <article class="tile is-child notification is-info">
+                        <p class="title" id="hours">
+                        <p class="subtitle">horas</p>
+                    </article>
+                </div>
+                <div class="tile is-parent is-2">
+                    <article class="tile is-child notification is-info">
+                        <p class="title" id="minutes">
+                        <p class="subtitle">minutos</p>
+                    </article>
+                </div>
+                <div class="tile is-parent is-2">
+                    <article class="tile is-child notification is-info">
+                        <p class="title" id="seconds">
+                        <p class="subtitle">segundos</p>
+                    </article>
+                </div>
+            </div>
+            <br />
+            <br />
+            <p class="subtitle">
+                <b>AUDIOFEST 2031</b> será el 1 de julio de 2031. Asegurate de conseguir entradas antes de que se
+                acaben.
+            </p>
+            <button class="button is-success is-large">
+                <span class="icon is-small">
+                    <i class="fas fa-ticket-alt"></i>
+                </span>
+                <span>Reserva tus entradas</span>
+            </button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>example-sites</strong> es un proyecto de <a href="https://gabrielalvarado.me">Gabriel
+                    Alvarado</a>. El código fuente está licenciado bajo <a
+                    href="http://opensource.org/licenses/mit-license.php">la licencia MIT</a>.
+            </p>
+            <p>2021</p>
+        </div>
+    </footer>
+</body>
+
+</html>
