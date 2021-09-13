@@ -1,7 +1,7 @@
 import * as bulmaCarousel from '../extensions/bulma-carousel.min.js';
 
 // Initialize all elements with carousel class.
-const carousels = bulmaCarousel.attach('.carousel', options);
+const carousels = bulmaCarousel.attach('.carousel');
 
 // To access to bulmaCarousel instance of an element
 const element = document.querySelector('#my-element');
