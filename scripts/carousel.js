@@ -1,4 +1,4 @@
-import bulmaCarousel from '../extensions/bulma-carousel.min.js';
+import * as bulmaCarousel from '../extensions/bulma-carousel.min.js';
 
 // Initialize all elements with carousel class.
 const carousels = bulmaCarousel.attach('.carousel', options);
