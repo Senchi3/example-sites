@@ -16,6 +16,8 @@
 </head>
 
 <body>
+
+    <!--Navbar-->
     <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://senchi3.github.io/example-sites/evento.html">
@@ -72,15 +74,18 @@
         </div>
     </nav>
 
+    <!--Hero: Artist List-->
     <section class="hero is-large is-info">
         <div class="hero-body">
             <p class="title">
                 Artistas invitados:
             </p>
+
+            <!--Widget: Artist Carousel-->
             <section class="section">
                 <div class="container">
                     <!-- Start Carousel -->
-                    <div id="carousel-demo" class="carousel" infinite="true">
+                    <div id="carousel-demo" class="carousel">
                         <div class="item-1">
                             <figure class="image is-square">
                                 <img src="../images/evento/pexels-oluremi-adebayo-2908175.jpg">
@@ -121,26 +126,29 @@
                     <!-- End Carousel -->
                 </div>
             </section>
-
             <script src="../extensions/bulma-carousel.min.js"></script>
             <script>
                 bulmaCarousel.attach('#carousel-demo', {
                     slidesToScroll: 1,
-                    slidesToShow: 4
+                    slidesToShow: 4,
+                    pagination: false,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 1500
                 });
             </script>
-            <div class="columns is-centered">
-                <h4 class="subtitle is-4">Y muchos más...</h5>
 
-            </div>
+            <h3 class="subtitle has-text-centered">Y muchos más...</h5>
     </section>
+
+    <!--Hero: Countdown-->
     <section class="hero is-medium">
         <div class="hero-body">
             <p class="title">
                 Marca tu calendario.
             </p>
-            <p id="countdown"></p>
 
+            <!--Widget: Carousel-->
             <div class="tile is-ancestor">
                 <div class="tile is-parent is-2">
                     <article class="tile is-child notification is-danger">
@@ -179,12 +187,14 @@
                     </article>
                 </div>
             </div>
-            <br />
-            <br />
+
+            <br/><br/>
             <p class="subtitle">
                 <b>AUDIOFEST 2031</b> será el 1 de julio de 2031. Asegurate de conseguir entradas antes de que se
                 acaben.
             </p>
+
+            <!--Widget: Buy Ticket Button-->
             <button class="button is-success is-large">
                 <span class="icon is-small">
                     <i class="fas fa-ticket-alt"></i>
@@ -193,6 +203,8 @@
             </button>
         </div>
     </section>
+
+    <!--Footer-->
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
@@ -205,6 +217,7 @@
             <p>2021</p>
         </div>
     </footer>
+
 </body>
 
 </html>

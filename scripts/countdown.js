@@ -20,8 +20,8 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the results in elements
-  document.getElementById("countdown").innerHTML =
-    years + "y " + months + "m " + days + "d "; // + hours + "h " + minutes + "m " + seconds + "s "
+  // document.getElementById("countdown").innerHTML =
+  //  years + "y " + months + "m " + days + "d "; // + hours + "h " + minutes + "m " + seconds + "s "
   document.getElementById("years").innerHTML = years;
   document.getElementById("months").innerHTML = months;
   document.getElementById("days").innerHTML = days;
