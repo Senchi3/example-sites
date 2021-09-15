@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/evento.css">
     <script src="../scripts/navbar.js"></script>
     <script src="../scripts/countdown.js"></script>
+    <script src="../scripts/modals.js"></script>
     <link href="../extensions/bulma-carousel.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/47aa67d8f2.js" crossorigin="anonymous"></script>
 </head>
@@ -77,6 +78,69 @@
     <!--Hero: Artist List-->
     <section class="hero is-large is-info">
         <div class="hero-body">
+
+            <!--Background: Artist modals-->
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <p class="image is-square">
+                        <img src="../images/evento/pexels-oluremi-adebayo-2908175.jpg">
+                        <h5 class="subtitle is-5 has-text-centered">Oluremi Adebayo</h5>
+                    </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <p class="image is-square">
+                        <img src="../images/evento/pexels-brett-sayles-1309240.jpg">
+                        <h5 class="subtitle is-5 has-text-centered">Brett Sayles</h5>
+                    </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <p class="image is-square">
+                        <img src="../images/evento/pexels-wendy-wei-1699161.jpg">
+                        <h5 class="subtitle is-5 has-text-centered">Wendy Wei</h5>
+                    </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <p class="image is-square">
+                        <img src="../images/evento/pexels-keegan-checks-2802811.jpg">
+                        <h5 class="subtitle is-5 has-text-centered">Keegan Checks</h5>
+                    </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <p class="image is-square">
+                        <img src="../images/evento/pexels-davide-de-giovanni-1649693.jpg">
+                        <h5 class="subtitle is-5 has-text-centered">Davide De Giovanni</h5>
+                    </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <p class="image is-square">
+                        <img src="../images/evento/pexels-radu-florin-2536584.jpg">
+                        <h5 class="subtitle is-5 has-text-centered">Radu Florin</h5>
+                    </p>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+
             <p class="title">
                 Artistas invitados:
             </p>
@@ -86,37 +150,37 @@
                 <div class="container">
                     <!-- Start Carousel -->
                     <div id="carousel-demo" class="carousel">
-                        <div class="item-1">
+                        <div class="item-1" id="modal-open">
                             <figure class="image is-square">
                                 <img src="../images/evento/pexels-oluremi-adebayo-2908175.jpg">
                             </figure>
                             <h5 class="subtitle is-5 has-text-centered">Oluremi Adebayo</h5>
                         </div>
-                        <div class="item-2">
+                        <div class="item-2" id="modal-open">
                             <figure class="image is-square">
                                 <img src="../images/evento/pexels-brett-sayles-1309240.jpg">
                             </figure>
                             <h5 class="subtitle is-5 has-text-centered">Brett Sayles</h5>
                         </div>
-                        <div class="item-3">
+                        <div class="item-3" id="modal-open">
                             <figure class="image is-square">
                                 <img src="../images/evento/pexels-wendy-wei-1699161.jpg">
                             </figure>
                             <h5 class="subtitle is-5 has-text-centered">Wendy Wei</h5>
                         </div>
-                        <div class="item-4">
+                        <div class="item-4" id="modal-open">
                             <figure class="image is-square">
                                 <img src="../images/evento/pexels-keegan-checks-2802811.jpg">
                             </figure>
                             <h5 class="subtitle is-5 has-text-centered">Keegan Checks</h5>
                         </div>
-                        <div class="item-5">
+                        <div class="item-5" id="modal-open">
                             <figure class="image is-square">
                                 <img src="../images/evento/pexels-davide-de-giovanni-1649693.jpg">
                             </figure>
                             <h5 class="subtitle is-5 has-text-centered">Davide De Giovanni</h5>
                         </div>
-                        <div class="item-6">
+                        <div class="item-6" id="modal-open">
                             <figure class="image is-square">
                                 <img src="../images/evento/pexels-radu-florin-2536584.jpg">
                             </figure>
@@ -188,7 +252,7 @@
                 </div>
             </div>
 
-            <br/><br/>
+            <br /><br />
             <p class="subtitle">
                 <b>AUDIOFEST 2031</b> será el 1 de julio de 2031. Asegurate de conseguir entradas antes de que se
                 acaben.
