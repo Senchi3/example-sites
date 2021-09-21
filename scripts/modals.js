@@ -1,6 +1,6 @@
-var modals = document.querySelectorAll(".modal");
-var openButtons = document.querySelectorAll(".modal-open");
-var closeButtons = document.querySelectorAll(".modal-close");
+var modals = document.getElementsByClassName("modal");
+var openButtons = document.getElementsByClassName("modal-open");
+var closeButtons = document.getElementsByClassName("modal-close");
 
 console.log(modals);
 console.log(openButtons);
