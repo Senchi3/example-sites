@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="../styles/evento.css">
     <script src="../scripts/navbar.js"></script>
     <script src="../scripts/countdown.js"></script>
+    <link href="../extensions/bulma-carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+    <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
     <script src="https://kit.fontawesome.com/47aa67d8f2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -78,62 +81,62 @@
         <div class="hero-body">
 
             <!--Background: Artist modals-->
-            <div class="modal">
+            <div class="modal modal-fx-slideTop">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <p class="image is-square">
                         <img src="../images/evento/pexels-oluremi-adebayo-2908175.jpg">
-                    <h5 class="subtitle is-5 has-text-centered">Oluremi Adebayo</h5>
+                        <h5 class="subtitle is-5 has-text-centered">Oluremi Adebayo</h5>
                     </p>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
             </div>
-            <div class="modal">
+            <div class="modal modal-fx-slideTop">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <p class="image is-square">
                         <img src="../images/evento/pexels-brett-sayles-1309240.jpg">
-                    <h5 class="subtitle is-5 has-text-centered">Brett Sayles</h5>
+                        <h5 class="subtitle is-5 has-text-centered">Brett Sayles</h5>
                     </p>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
             </div>
-            <div class="modal">
+            <div class="modal modal-fx-slideTop">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <p class="image is-square">
                         <img src="../images/evento/pexels-wendy-wei-1699161.jpg">
-                    <h5 class="subtitle is-5 has-text-centered">Wendy Wei</h5>
+                        <h5 class="subtitle is-5 has-text-centered">Wendy Wei</h5>
                     </p>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
             </div>
-            <div class="modal">
+            <div class="modal modal-fx-slideTop">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <p class="image is-square">
                         <img src="../images/evento/pexels-keegan-checks-2802811.jpg">
-                    <h5 class="subtitle is-5 has-text-centered">Keegan Checks</h5>
+                        <h5 class="subtitle is-5 has-text-centered">Keegan Checks</h5>
                     </p>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
             </div>
-            <div class="modal">
+            <div class="modal modal-fx-slideTop">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <p class="image is-square">
                         <img src="../images/evento/pexels-davide-de-giovanni-1649693.jpg">
-                    <h5 class="subtitle is-5 has-text-centered">Davide De Giovanni</h5>
+                        <h5 class="subtitle is-5 has-text-centered">Davide De Giovanni</h5>
                     </p>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
             </div>
-            <div class="modal">
+            <div class="modal modal-fx-slideTop">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <p class="image is-square">
                         <img src="../images/evento/pexels-radu-florin-2536584.jpg">
-                    <h5 class="subtitle is-5 has-text-centered">Radu Florin</h5>
+                        <h5 class="subtitle is-5 has-text-centered">Radu Florin</h5>
                     </p>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
@@ -143,51 +146,62 @@
                 Artistas invitados:
             </p>
 
-            <!--Debug: Artist Grid-->
-            <div class="columns">
-                <div class="column">
-                    <div class="modal-open">
-                        <figure class="image is-square">
-                            <img src="../images/evento/pexels-oluremi-adebayo-2908175.jpg">
-                        </figure>
-                        <h5 class="subtitle is-5 has-text-centered">Oluremi Adebayo</h5>
-                    </div><br>
-                    <div class="modal-open">
-                        <figure class="image is-square">
-                            <img src="../images/evento/pexels-brett-sayles-1309240.jpg">
-                        </figure>
-                        <h5 class="subtitle is-5 has-text-centered">Brett Sayles</h5>
+            <!--Widget: Artist Carousel-->
+            <section class="section">
+                <div class="container">
+                    <!-- Start Carousel -->
+                    <div id="carousel-demo" class="carousel">
+                        <div class="item-1 modal-open">
+                            <figure class="image is-square">
+                                <img src="../images/evento/pexels-oluremi-adebayo-2908175.jpg">
+                            </figure>
+                            <h5 class="subtitle is-5 has-text-centered">Oluremi Adebayo</h5>
+                        </div>
+                        <div class="item-2 modal-open">
+                            <figure class="image is-square">
+                                <img src="../images/evento/pexels-brett-sayles-1309240.jpg">
+                            </figure>
+                            <h5 class="subtitle is-5 has-text-centered">Brett Sayles</h5>
+                        </div>
+                        <div class="item-3 modal-open">
+                            <figure class="image is-square">
+                                <img src="../images/evento/pexels-wendy-wei-1699161.jpg">
+                            </figure>
+                            <h5 class="subtitle is-5 has-text-centered">Wendy Wei</h5>
+                        </div>
+                        <div class="item-4 modal-open">
+                            <figure class="image is-square">
+                                <img src="../images/evento/pexels-keegan-checks-2802811.jpg">
+                            </figure>
+                            <h5 class="subtitle is-5 has-text-centered">Keegan Checks</h5>
+                        </div>
+                        <div class="item-5 modal-open">
+                            <figure class="image is-square">
+                                <img src="../images/evento/pexels-davide-de-giovanni-1649693.jpg">
+                            </figure>
+                            <h5 class="subtitle is-5 has-text-centered">Davide De Giovanni</h5>
+                        </div>
+                        <div class="item-6 modal-open">
+                            <figure class="image is-square">
+                                <img src="../images/evento/pexels-radu-florin-2536584.jpg">
+                            </figure>
+                            <h5 class="subtitle is-5 has-text-centered">Radu Florin</h5>
+                        </div>
                     </div>
+                    <!-- End Carousel -->
                 </div>
-                <div class="column">
-                    <div class="modal-open">
-                        <figure class="image is-square">
-                            <img src="../images/evento/pexels-wendy-wei-1699161.jpg">
-                        </figure>
-                        <h5 class="subtitle is-5 has-text-centered">Wendy Wei</h5>
-                    </div><br>
-                    <div class="modal-open">
-                        <figure class="image is-square">
-                            <img src="../images/evento/pexels-keegan-checks-2802811.jpg">
-                        </figure>
-                        <h5 class="subtitle is-5 has-text-centered">Keegan Checks</h5>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="modal-open">
-                        <figure class="image is-square">
-                            <img src="../images/evento/pexels-davide-de-giovanni-1649693.jpg">
-                        </figure>
-                        <h5 class="subtitle is-5 has-text-centered">Davide De Giovanni</h5>
-                    </div><br>
-                    <div class="modal-open">
-                        <figure class="image is-square">
-                            <img src="../images/evento/pexels-radu-florin-2536584.jpg">
-                        </figure>
-                        <h5 class="subtitle is-5 has-text-centered">Radu Florin</h5>
-                    </div>
-                </div>
-            </div>
+            </section>
+            <script src="../extensions/bulma-carousel.min.js"></script>
+            <script>
+                bulmaCarousel.attach('#carousel-demo', {
+                    slidesToScroll: 1,
+                    slidesToShow: 4,
+                    pagination: false,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 1500
+                });
+            </script>
 
             <h3 class="subtitle has-text-centered">Y muchos más...</h5>
     </section>
@@ -199,6 +213,7 @@
                 Marca tu calendario.
             </p>
 
+            <!--Widget: Carousel-->
             <div class="tile is-ancestor">
                 <div class="tile is-parent is-2">
                     <article class="tile is-child notification is-danger">
@@ -269,6 +284,7 @@
     </footer>
 
     <script src="../scripts/modals.js"></script>
+
 </body>
 
 </html>
