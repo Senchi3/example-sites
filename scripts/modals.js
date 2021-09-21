@@ -1,18 +1,22 @@
 var modals = document.getElementsByClassName("modal");
-var modalBackgrounds = document.getElementsByClassName("modal-background");
 var openButtons = document.getElementsByClassName("modal-open");
 var closeButtons = document.getElementsByClassName("modal-close");
+var modalBackgrounds = document.getElementsByClassName("modal-background")
 
-for (let i = 0; i < modals.length; i++) {
+for (let i = 0; i < openButtons.length; i++) {
+
+  const smallIndex = (i + 1) % modals.length
+
   openButtons[i].addEventListener("click", function () {
-    modals[i].classList.add("is-active");
+    modals[smallIndex].classList.add("is-active");
   });
 
-  closeButtons[i].addEventListener("click", function () {
-    modals[i].classList.remove("is-active");
+  closeButtons[smallIndex].addEventListener("click", function () {
+    modals[smallIndex].classList.remove("is-active");
   });
 
-  modalBackgrounds[i].addEventListener("click", function () {
-    modals[i].classList.remove("is-active");
+  modalBackgrounds[smallIndex].addEventListener("click", function () {
+    modals[smallIndex].classList.remove("is-active");
   });
+
 }
